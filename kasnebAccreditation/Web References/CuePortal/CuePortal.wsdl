@@ -1,0 +1,4015 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:tns="urn:microsoft-dynamics-schemas/codeunit/CuePortal" targetNamespace="urn:microsoft-dynamics-schemas/codeunit/CuePortal" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <schema elementFormDefault="qualified" targetNamespace="urn:microsoft-dynamics-schemas/codeunit/CuePortal" xmlns="http://www.w3.org/2001/XMLSchema">
+      <element name="GetApplicationNumber">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="usercode" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetApplicationNumber_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ConfirmPayment">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="universityCode" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ConfirmPayment_Result">
+        <complexType>
+          <sequence />
+        </complexType>
+      </element>
+      <element name="Approve">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="category" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userId" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="action" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="Approve_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ApplyForAccreditation">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="proposedName" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="postaddress" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="postcode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="email" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="accreditationType" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="institutionwebsite" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="kraPin" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="tConstituency" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="phonenumber" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userPassword" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ApplyForAccreditation_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteSponsors">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="entryNo" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="user" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteSponsors_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteDepartments">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="entryNo" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="user" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteDepartments_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteSchools">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="entryNo" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="user" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteSchools_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteAffiliations">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="entryNo" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="user" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteAffiliations_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteChancellors">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="entryNo" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="user" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteChancellors_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetInstitutionNumber">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetInstitutionNumber_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="Deletekeymilestone">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="milestoneCode" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userPassword" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="Deletekeymilestone_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="EditChancellors">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="universitycode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="name" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="qualifications" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="appointmentdate" type="date" />
+            <element minOccurs="1" maxOccurs="1" name="nationality" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userPassword" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="EditChancellors_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="EditAffiliations">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="universitycode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="affilicationcode" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="name" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="affiliationcountry" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="organisationname" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userPassword" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="EditAffiliations_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="EditSponsor">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="universitycode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="name" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userPassword" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="EditSponsor_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="EditKeyMilestones">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="universitycode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="code" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="year" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="milestone" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userPassword" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="EditKeyMilestones_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="EditSchool">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="universitycode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="schoolcode" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="name" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userPassword" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="EditSchool_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="EditDepartment">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="universitycode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="departmentcode" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="school" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="department" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userPassword" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="EditDepartment_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="EditGeneralDetails">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="universityCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="statusCategory" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="institutionSponsor" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="institutionEmailAddress" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="institutionPhoneNumber" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="institutionPostAddress" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="institutionPostCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="mainCampusCounty" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="mainCampusConstituency" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="mainCampusTown" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="EditGeneralDetails_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddMissionDetails">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="universityCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="mission" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="vission" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="aims" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddMissionDetails_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddPhilosophy">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="universityCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="philosophicalbasis" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddPhilosophy_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddMilestone">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="universityCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="milestoneyear" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="milestonedescription" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddMilestone_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddAffiliations">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="universityCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="affiliationdescription" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="countryname" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="organisationname" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddAffiliations_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddschoolFaculties">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="universityCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="facultydescription" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddschoolFaculties_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddDepartments">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="universityCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="schoolcode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="departmentname" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddDepartments_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddSponsors">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="universityCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="sponsorname" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddSponsors_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddHistory">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="universityCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="history" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddHistory_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="Editphylosophy">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="universityCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="phylosophydetails" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="Editphylosophy_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ValidateLearningOutcome2">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ValidateLearningOutcome2_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddLearningOutcome">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="outcomeDescription" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="outcomenomber" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddLearningOutcome_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="EditProgramRationale">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="rationaleCode" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="rationaleCategory" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="rationaleDescription" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="EditProgramRationale_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="EditSpecializationAreas">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="specializationCode" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="specializationarea" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="specializationdescription" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="EditSpecializationAreas_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddSpecializationAreas">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="specializationaraea" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="specializationdescription" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddSpecializationAreas_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="EditLearningOutcome">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="outcomeCode" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="outcomeDescription" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="EditLearningOutcome_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteLearningOutcome">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="outcomeCode" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="usercode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteLearningOutcome_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteSpecializationArea">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="specializationcode" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteSpecializationArea_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddDeliveryMode">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="deliveryMode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddDeliveryMode_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteDeliveryMode">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="deliveryMode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteDeliveryMode_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="VlidateDeliveryMode2">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="VlidateDeliveryMode2_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddGradingSystem">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="gradingCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="minimum" type="decimal" />
+            <element minOccurs="1" maxOccurs="1" name="maximum" type="decimal" />
+            <element minOccurs="1" maxOccurs="1" name="gpaPoints" type="decimal" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddGradingSystem_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ValidateGradingSystem2">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ValidateGradingSystem2_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="EditGradingSystem">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="code" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="gradingCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="minimum" type="decimal" />
+            <element minOccurs="1" maxOccurs="1" name="maximum" type="decimal" />
+            <element minOccurs="1" maxOccurs="1" name="gpaPoints" type="decimal" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="EditGradingSystem_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteGradingSystem">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="code" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteGradingSystem_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddUnit">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="unitCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="unitTitle" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="creditHours" type="decimal" />
+            <element minOccurs="1" maxOccurs="1" name="yearCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="courseCategory" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="coursecontent" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="instructional" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="courseassessment" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="recommendedref" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="discoverylearning" type="boolean" />
+            <element minOccurs="1" maxOccurs="1" name="problembasedlearning" type="boolean" />
+            <element minOccurs="1" maxOccurs="1" name="experientiallearning" type="boolean" />
+            <element minOccurs="1" maxOccurs="1" name="groupbasedlearning" type="boolean" />
+            <element minOccurs="1" maxOccurs="1" name="independentstudies" type="boolean" />
+            <element minOccurs="1" maxOccurs="1" name="lectures" type="boolean" />
+            <element minOccurs="1" maxOccurs="1" name="others" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddUnit_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="EditUnit">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="code" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="unitCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="unitTitle" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="creditHours" type="decimal" />
+            <element minOccurs="1" maxOccurs="1" name="yearCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="courseCategory" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="comments" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="EditUnit_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteUnit">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="code" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteUnit_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddInstructionalMethod">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="deliveryMode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddInstructionalMethod_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ValidateInstructionalMethod">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ValidateInstructionalMethod_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddInstructionalMethodEntry">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="deliveryMode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddInstructionalMethodEntry_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteInstructionalMethod">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="code" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteInstructionalMethod_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddCourseLearningOutcome">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="learnigOutcomeCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="courseCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddCourseLearningOutcome_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddBook">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="bookTitle" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="courseCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="authors" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="yearOfPublication" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="publishers" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="url" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="print" type="boolean" />
+            <element minOccurs="1" maxOccurs="1" name="electronic" type="boolean" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddBook_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ValidateBook">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ValidateBook_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="EditBook">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="code" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="bookTitle" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="courseCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="authors" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="yearOfPublication" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="publishers" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="url" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="print" type="boolean" />
+            <element minOccurs="1" maxOccurs="1" name="electronic" type="boolean" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="EditBook_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteBook">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="code" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteBook_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SaveDocumentsInstProgrammes">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="applicationLetter" type="boolean" />
+            <element minOccurs="1" maxOccurs="1" name="paymentDocument" type="boolean" />
+            <element minOccurs="1" maxOccurs="1" name="facilitiesdocument" type="boolean" />
+            <element minOccurs="1" maxOccurs="1" name="equipmentdocument" type="boolean" />
+            <element minOccurs="1" maxOccurs="1" name="coretextdocument" type="boolean" />
+            <element minOccurs="1" maxOccurs="1" name="academcistaffdocument" type="boolean" />
+            <element minOccurs="1" maxOccurs="1" name="universitypolicydocument" type="boolean" />
+            <element minOccurs="1" maxOccurs="1" name="evidencedocument" type="boolean" />
+            <element minOccurs="1" maxOccurs="1" name="picturePolicy" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="facilitiesImage" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="equipmentsImage" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="coretextImage" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="academicstaffImage" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="supportstaffImage" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SaveDocumentsInstProgrammes_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ConfirmPaymentsInstitution">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="paymentDocument" type="boolean" />
+            <element minOccurs="1" maxOccurs="1" name="paymentRef" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ConfirmPaymentsInstitution_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="EditCourseLearningOutcome">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="code" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="learnigOutcomeCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="courseCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="EditCourseLearningOutcome_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteCourseLearningOutcome">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="code" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteCourseLearningOutcome_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteProgramRationale">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="rationaleCode" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteProgramRationale_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="InstitutionCreateinvoice">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="universityCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="usercode" type="int" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="InstitutionCreateinvoice_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetOutComenNumber">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="institutionno" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetOutComenNumber_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="FnUserHelpEmaiRequest">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="usercode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="email" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="useremailsubject" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="messagebody" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="FnUserHelpEmaiRequest_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddUniversityChancellors">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="universityCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="chancellorName" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="qualifications" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="dateofAppointment" type="date" />
+            <element minOccurs="1" maxOccurs="1" name="nationality" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddUniversityChancellors_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="InitialGeneralDetails">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="programName" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="programDuration" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="programDomain" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="programLevel" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="phylosophy" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="totalcredit" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="totalcourse" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="admission" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="goal" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="requlations" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="examinations" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="moderation" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="graduation" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="description" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="programanagement" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="studentspolicy" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="InitialGeneralDetails_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddProgramRationale">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="rationaleCategory" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="rationaleDescription" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddProgramRationale_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ValidateProgramRationale">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accreditationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="userCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="password" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ValidateProgramRationale_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="FnGenerateExitReport">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="programmeNumber" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="university" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="FnGenerateExitReport_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="FnGenerateProgrammeFeedbackVoucher">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="programmeNumber" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="university" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="FnGenerateProgrammeFeedbackVoucher_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="FnGenerateProgrammeEvaluationToool">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="programmeNumber" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="university" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="FnGenerateProgrammeEvaluationToool_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="PortalResetPassword">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="emailaddress" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="PortalResetPassword_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="FngetRationaleDescription">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accreditation" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="universitycode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="category" type="int" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="FngetRationaleDescription_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="FngetUniversityDomain">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="universityCode" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="FngetUniversityDomain_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="Fnuseraccountcreation">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="idnumber" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="firstname" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="middlename" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="lastname" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="phonenumber" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="emailaddress" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="address" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="postcodes" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="city" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="country" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="universityname" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="applicationType" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="institutionType" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="county" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="address2" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="Fnuseraccountcreation_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="FnceateapplicationLines">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="qncode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="applicatinNumber" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="accreditationAnswer" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="responce" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="FnceateapplicationLines_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AccreditationApplication">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="accreditationtype" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="name" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="institutiontype" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="email" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="phone" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="applicationNo" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AccreditationApplication_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreateCampus">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="name" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="city" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="postcode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="address" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="contact" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="category" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="applicationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="country" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="phone" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="county" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="email" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreateCampus_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreateOptionResponce">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="optioncode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="applicationNo" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreateOptionResponce_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreatAccreditationResponce">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="qnCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="optionResponce" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="applicatinNumber" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreatAccreditationResponce_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreateStaff">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="description" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="noofstaff" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="highestq" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="lowestq" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="category" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="applicationNo" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreateStaff_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreateTrainers">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="courseCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="courseSection" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="parttimestudents" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="fulltimestudents" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="parttimetrainers" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="fulltimetrainers" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="highestQ" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="lowestQ" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="minLecHrs" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="maxLecHrs" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="micCoursehrs" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="maxcoursehrs" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="application" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreateTrainers_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SittingCapacity">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="applicationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="examination" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="noOfClasses" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="sittingSpace" type="decimal" />
+            <element minOccurs="1" maxOccurs="1" name="largestClassSitting" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="smallestClassSitting" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="totalSittingCapacity" type="int" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SittingCapacity_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreateRecomBooks">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="applicationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="domainARea" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="estimatedNo" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="estimatedTotalValue" type="decimal" />
+            <element minOccurs="1" maxOccurs="1" name="noOfRecommBooks" type="int" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreateRecomBooks_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreateComputerLab">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="applicationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="compsLab" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="sittingCapacity" type="decimal" />
+            <element minOccurs="1" maxOccurs="1" name="aVailableForTraining" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="adapter" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="totalSpace" type="decimal" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreateComputerLab_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreateCompDetails">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="applicationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="noOfComps" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="processorType" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="processorSpeer" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="ramCapacity" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="hardDisk" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreateCompDetails_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreateICTAccessory">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="applicationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="academicTypeName" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="typeAvailable" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="category" type="int" />
+            <element minOccurs="1" maxOccurs="1" name="number" type="int" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreateICTAccessory_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteCampusLine">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="applicationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="lineNo" type="int" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteCampusLine_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeletestaffLine">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="applicationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="lineNo" type="int" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeletestaffLine_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeletetrainerLine">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="applicationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="lineNo" type="int" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeletetrainerLine_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteclassLine">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="applicationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="lineNo" type="int" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteclassLine_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteRefBookLine">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="applicationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="lineNo" type="int" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteRefBookLine_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteCompLine">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="applicationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="lineNo" type="int" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteCompLine_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteCompDetailsLine">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="applicationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="lineNo" type="int" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteCompDetailsLine_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SelfEvaluationResponce">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="applicationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="componentCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="questionCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="score" type="decimal" />
+            <element minOccurs="1" maxOccurs="1" name="comment" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="evaluationHeaderNo" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SelfEvaluationResponce_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="PrintCertificate">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="applicationNoFilter" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="PrintCertificate_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SubmitApplication">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="applicationNo" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SubmitApplication_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SendEmail">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="recipient" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="title" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="message" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SendEmail_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="boolean" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreatAccreditationSubQResponce">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="qnCode" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="optionResponce" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="applicatinNumber" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="subQnCode" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreatAccreditationSubQResponce_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteICTLine">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="applicationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="lineNo" type="int" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DeleteICTLine_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SelfEvalutionApplication">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="applicationNo" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SelfEvalutionApplication_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="PrintScore">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="applicationNoFilter" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="PrintScore_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="PrintdetailedReport">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="applicationNoFilter" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="PrintdetailedReport_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ConfirmAccreditationPayment">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="applicationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="paymentRef" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ConfirmAccreditationPayment_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="FnCreateApplicantAccountRequest">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="emailaddress" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="FnCreateApplicantAccountRequest_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="PrintdApplicationReport">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="applicationNoFilter" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="code" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="PrintdApplicationReport_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SendEmailAccountCreation">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="email" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SendEmailAccountCreation_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="Printdsummeryscore">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="applicationNoFilter" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="Printdsummeryscore_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="FnResetPassword">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="emailaddress" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="FnResetPassword_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ResetSendEmail">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="emailaddress" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ResetSendEmail_Result">
+        <complexType>
+          <sequence />
+        </complexType>
+      </element>
+      <element name="FnChangeStudentPassword">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="emailaddress" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="currentPassword" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="newPassword" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="confirmNewPassword" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="FnChangeStudentPassword_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddAccreditationSharepointLinks">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="applicationNo" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="filename" type="string" />
+            <element minOccurs="1" maxOccurs="1" name="sharepointlink" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="AddAccreditationSharepointLinks_Result">
+        <complexType>
+          <sequence>
+            <element minOccurs="1" maxOccurs="1" name="return_value" type="string" />
+          </sequence>
+        </complexType>
+      </element>
+    </schema>
+  </types>
+  <message name="GetApplicationNumber">
+    <part name="parameters" element="tns:GetApplicationNumber" />
+  </message>
+  <message name="GetApplicationNumber_Result">
+    <part name="parameters" element="tns:GetApplicationNumber_Result" />
+  </message>
+  <message name="ConfirmPayment">
+    <part name="parameters" element="tns:ConfirmPayment" />
+  </message>
+  <message name="ConfirmPayment_Result">
+    <part name="parameters" element="tns:ConfirmPayment_Result" />
+  </message>
+  <message name="Approve">
+    <part name="parameters" element="tns:Approve" />
+  </message>
+  <message name="Approve_Result">
+    <part name="parameters" element="tns:Approve_Result" />
+  </message>
+  <message name="ApplyForAccreditation">
+    <part name="parameters" element="tns:ApplyForAccreditation" />
+  </message>
+  <message name="ApplyForAccreditation_Result">
+    <part name="parameters" element="tns:ApplyForAccreditation_Result" />
+  </message>
+  <message name="DeleteSponsors">
+    <part name="parameters" element="tns:DeleteSponsors" />
+  </message>
+  <message name="DeleteSponsors_Result">
+    <part name="parameters" element="tns:DeleteSponsors_Result" />
+  </message>
+  <message name="DeleteDepartments">
+    <part name="parameters" element="tns:DeleteDepartments" />
+  </message>
+  <message name="DeleteDepartments_Result">
+    <part name="parameters" element="tns:DeleteDepartments_Result" />
+  </message>
+  <message name="DeleteSchools">
+    <part name="parameters" element="tns:DeleteSchools" />
+  </message>
+  <message name="DeleteSchools_Result">
+    <part name="parameters" element="tns:DeleteSchools_Result" />
+  </message>
+  <message name="DeleteAffiliations">
+    <part name="parameters" element="tns:DeleteAffiliations" />
+  </message>
+  <message name="DeleteAffiliations_Result">
+    <part name="parameters" element="tns:DeleteAffiliations_Result" />
+  </message>
+  <message name="DeleteChancellors">
+    <part name="parameters" element="tns:DeleteChancellors" />
+  </message>
+  <message name="DeleteChancellors_Result">
+    <part name="parameters" element="tns:DeleteChancellors_Result" />
+  </message>
+  <message name="GetInstitutionNumber">
+    <part name="parameters" element="tns:GetInstitutionNumber" />
+  </message>
+  <message name="GetInstitutionNumber_Result">
+    <part name="parameters" element="tns:GetInstitutionNumber_Result" />
+  </message>
+  <message name="Deletekeymilestone">
+    <part name="parameters" element="tns:Deletekeymilestone" />
+  </message>
+  <message name="Deletekeymilestone_Result">
+    <part name="parameters" element="tns:Deletekeymilestone_Result" />
+  </message>
+  <message name="EditChancellors">
+    <part name="parameters" element="tns:EditChancellors" />
+  </message>
+  <message name="EditChancellors_Result">
+    <part name="parameters" element="tns:EditChancellors_Result" />
+  </message>
+  <message name="EditAffiliations">
+    <part name="parameters" element="tns:EditAffiliations" />
+  </message>
+  <message name="EditAffiliations_Result">
+    <part name="parameters" element="tns:EditAffiliations_Result" />
+  </message>
+  <message name="EditSponsor">
+    <part name="parameters" element="tns:EditSponsor" />
+  </message>
+  <message name="EditSponsor_Result">
+    <part name="parameters" element="tns:EditSponsor_Result" />
+  </message>
+  <message name="EditKeyMilestones">
+    <part name="parameters" element="tns:EditKeyMilestones" />
+  </message>
+  <message name="EditKeyMilestones_Result">
+    <part name="parameters" element="tns:EditKeyMilestones_Result" />
+  </message>
+  <message name="EditSchool">
+    <part name="parameters" element="tns:EditSchool" />
+  </message>
+  <message name="EditSchool_Result">
+    <part name="parameters" element="tns:EditSchool_Result" />
+  </message>
+  <message name="EditDepartment">
+    <part name="parameters" element="tns:EditDepartment" />
+  </message>
+  <message name="EditDepartment_Result">
+    <part name="parameters" element="tns:EditDepartment_Result" />
+  </message>
+  <message name="EditGeneralDetails">
+    <part name="parameters" element="tns:EditGeneralDetails" />
+  </message>
+  <message name="EditGeneralDetails_Result">
+    <part name="parameters" element="tns:EditGeneralDetails_Result" />
+  </message>
+  <message name="AddMissionDetails">
+    <part name="parameters" element="tns:AddMissionDetails" />
+  </message>
+  <message name="AddMissionDetails_Result">
+    <part name="parameters" element="tns:AddMissionDetails_Result" />
+  </message>
+  <message name="AddPhilosophy">
+    <part name="parameters" element="tns:AddPhilosophy" />
+  </message>
+  <message name="AddPhilosophy_Result">
+    <part name="parameters" element="tns:AddPhilosophy_Result" />
+  </message>
+  <message name="AddMilestone">
+    <part name="parameters" element="tns:AddMilestone" />
+  </message>
+  <message name="AddMilestone_Result">
+    <part name="parameters" element="tns:AddMilestone_Result" />
+  </message>
+  <message name="AddAffiliations">
+    <part name="parameters" element="tns:AddAffiliations" />
+  </message>
+  <message name="AddAffiliations_Result">
+    <part name="parameters" element="tns:AddAffiliations_Result" />
+  </message>
+  <message name="AddschoolFaculties">
+    <part name="parameters" element="tns:AddschoolFaculties" />
+  </message>
+  <message name="AddschoolFaculties_Result">
+    <part name="parameters" element="tns:AddschoolFaculties_Result" />
+  </message>
+  <message name="AddDepartments">
+    <part name="parameters" element="tns:AddDepartments" />
+  </message>
+  <message name="AddDepartments_Result">
+    <part name="parameters" element="tns:AddDepartments_Result" />
+  </message>
+  <message name="AddSponsors">
+    <part name="parameters" element="tns:AddSponsors" />
+  </message>
+  <message name="AddSponsors_Result">
+    <part name="parameters" element="tns:AddSponsors_Result" />
+  </message>
+  <message name="AddHistory">
+    <part name="parameters" element="tns:AddHistory" />
+  </message>
+  <message name="AddHistory_Result">
+    <part name="parameters" element="tns:AddHistory_Result" />
+  </message>
+  <message name="Editphylosophy">
+    <part name="parameters" element="tns:Editphylosophy" />
+  </message>
+  <message name="Editphylosophy_Result">
+    <part name="parameters" element="tns:Editphylosophy_Result" />
+  </message>
+  <message name="ValidateLearningOutcome2">
+    <part name="parameters" element="tns:ValidateLearningOutcome2" />
+  </message>
+  <message name="ValidateLearningOutcome2_Result">
+    <part name="parameters" element="tns:ValidateLearningOutcome2_Result" />
+  </message>
+  <message name="AddLearningOutcome">
+    <part name="parameters" element="tns:AddLearningOutcome" />
+  </message>
+  <message name="AddLearningOutcome_Result">
+    <part name="parameters" element="tns:AddLearningOutcome_Result" />
+  </message>
+  <message name="EditProgramRationale">
+    <part name="parameters" element="tns:EditProgramRationale" />
+  </message>
+  <message name="EditProgramRationale_Result">
+    <part name="parameters" element="tns:EditProgramRationale_Result" />
+  </message>
+  <message name="EditSpecializationAreas">
+    <part name="parameters" element="tns:EditSpecializationAreas" />
+  </message>
+  <message name="EditSpecializationAreas_Result">
+    <part name="parameters" element="tns:EditSpecializationAreas_Result" />
+  </message>
+  <message name="AddSpecializationAreas">
+    <part name="parameters" element="tns:AddSpecializationAreas" />
+  </message>
+  <message name="AddSpecializationAreas_Result">
+    <part name="parameters" element="tns:AddSpecializationAreas_Result" />
+  </message>
+  <message name="EditLearningOutcome">
+    <part name="parameters" element="tns:EditLearningOutcome" />
+  </message>
+  <message name="EditLearningOutcome_Result">
+    <part name="parameters" element="tns:EditLearningOutcome_Result" />
+  </message>
+  <message name="DeleteLearningOutcome">
+    <part name="parameters" element="tns:DeleteLearningOutcome" />
+  </message>
+  <message name="DeleteLearningOutcome_Result">
+    <part name="parameters" element="tns:DeleteLearningOutcome_Result" />
+  </message>
+  <message name="DeleteSpecializationArea">
+    <part name="parameters" element="tns:DeleteSpecializationArea" />
+  </message>
+  <message name="DeleteSpecializationArea_Result">
+    <part name="parameters" element="tns:DeleteSpecializationArea_Result" />
+  </message>
+  <message name="AddDeliveryMode">
+    <part name="parameters" element="tns:AddDeliveryMode" />
+  </message>
+  <message name="AddDeliveryMode_Result">
+    <part name="parameters" element="tns:AddDeliveryMode_Result" />
+  </message>
+  <message name="DeleteDeliveryMode">
+    <part name="parameters" element="tns:DeleteDeliveryMode" />
+  </message>
+  <message name="DeleteDeliveryMode_Result">
+    <part name="parameters" element="tns:DeleteDeliveryMode_Result" />
+  </message>
+  <message name="VlidateDeliveryMode2">
+    <part name="parameters" element="tns:VlidateDeliveryMode2" />
+  </message>
+  <message name="VlidateDeliveryMode2_Result">
+    <part name="parameters" element="tns:VlidateDeliveryMode2_Result" />
+  </message>
+  <message name="AddGradingSystem">
+    <part name="parameters" element="tns:AddGradingSystem" />
+  </message>
+  <message name="AddGradingSystem_Result">
+    <part name="parameters" element="tns:AddGradingSystem_Result" />
+  </message>
+  <message name="ValidateGradingSystem2">
+    <part name="parameters" element="tns:ValidateGradingSystem2" />
+  </message>
+  <message name="ValidateGradingSystem2_Result">
+    <part name="parameters" element="tns:ValidateGradingSystem2_Result" />
+  </message>
+  <message name="EditGradingSystem">
+    <part name="parameters" element="tns:EditGradingSystem" />
+  </message>
+  <message name="EditGradingSystem_Result">
+    <part name="parameters" element="tns:EditGradingSystem_Result" />
+  </message>
+  <message name="DeleteGradingSystem">
+    <part name="parameters" element="tns:DeleteGradingSystem" />
+  </message>
+  <message name="DeleteGradingSystem_Result">
+    <part name="parameters" element="tns:DeleteGradingSystem_Result" />
+  </message>
+  <message name="AddUnit">
+    <part name="parameters" element="tns:AddUnit" />
+  </message>
+  <message name="AddUnit_Result">
+    <part name="parameters" element="tns:AddUnit_Result" />
+  </message>
+  <message name="EditUnit">
+    <part name="parameters" element="tns:EditUnit" />
+  </message>
+  <message name="EditUnit_Result">
+    <part name="parameters" element="tns:EditUnit_Result" />
+  </message>
+  <message name="DeleteUnit">
+    <part name="parameters" element="tns:DeleteUnit" />
+  </message>
+  <message name="DeleteUnit_Result">
+    <part name="parameters" element="tns:DeleteUnit_Result" />
+  </message>
+  <message name="AddInstructionalMethod">
+    <part name="parameters" element="tns:AddInstructionalMethod" />
+  </message>
+  <message name="AddInstructionalMethod_Result">
+    <part name="parameters" element="tns:AddInstructionalMethod_Result" />
+  </message>
+  <message name="ValidateInstructionalMethod">
+    <part name="parameters" element="tns:ValidateInstructionalMethod" />
+  </message>
+  <message name="ValidateInstructionalMethod_Result">
+    <part name="parameters" element="tns:ValidateInstructionalMethod_Result" />
+  </message>
+  <message name="AddInstructionalMethodEntry">
+    <part name="parameters" element="tns:AddInstructionalMethodEntry" />
+  </message>
+  <message name="AddInstructionalMethodEntry_Result">
+    <part name="parameters" element="tns:AddInstructionalMethodEntry_Result" />
+  </message>
+  <message name="DeleteInstructionalMethod">
+    <part name="parameters" element="tns:DeleteInstructionalMethod" />
+  </message>
+  <message name="DeleteInstructionalMethod_Result">
+    <part name="parameters" element="tns:DeleteInstructionalMethod_Result" />
+  </message>
+  <message name="AddCourseLearningOutcome">
+    <part name="parameters" element="tns:AddCourseLearningOutcome" />
+  </message>
+  <message name="AddCourseLearningOutcome_Result">
+    <part name="parameters" element="tns:AddCourseLearningOutcome_Result" />
+  </message>
+  <message name="AddBook">
+    <part name="parameters" element="tns:AddBook" />
+  </message>
+  <message name="AddBook_Result">
+    <part name="parameters" element="tns:AddBook_Result" />
+  </message>
+  <message name="ValidateBook">
+    <part name="parameters" element="tns:ValidateBook" />
+  </message>
+  <message name="ValidateBook_Result">
+    <part name="parameters" element="tns:ValidateBook_Result" />
+  </message>
+  <message name="EditBook">
+    <part name="parameters" element="tns:EditBook" />
+  </message>
+  <message name="EditBook_Result">
+    <part name="parameters" element="tns:EditBook_Result" />
+  </message>
+  <message name="DeleteBook">
+    <part name="parameters" element="tns:DeleteBook" />
+  </message>
+  <message name="DeleteBook_Result">
+    <part name="parameters" element="tns:DeleteBook_Result" />
+  </message>
+  <message name="SaveDocumentsInstProgrammes">
+    <part name="parameters" element="tns:SaveDocumentsInstProgrammes" />
+  </message>
+  <message name="SaveDocumentsInstProgrammes_Result">
+    <part name="parameters" element="tns:SaveDocumentsInstProgrammes_Result" />
+  </message>
+  <message name="ConfirmPaymentsInstitution">
+    <part name="parameters" element="tns:ConfirmPaymentsInstitution" />
+  </message>
+  <message name="ConfirmPaymentsInstitution_Result">
+    <part name="parameters" element="tns:ConfirmPaymentsInstitution_Result" />
+  </message>
+  <message name="EditCourseLearningOutcome">
+    <part name="parameters" element="tns:EditCourseLearningOutcome" />
+  </message>
+  <message name="EditCourseLearningOutcome_Result">
+    <part name="parameters" element="tns:EditCourseLearningOutcome_Result" />
+  </message>
+  <message name="DeleteCourseLearningOutcome">
+    <part name="parameters" element="tns:DeleteCourseLearningOutcome" />
+  </message>
+  <message name="DeleteCourseLearningOutcome_Result">
+    <part name="parameters" element="tns:DeleteCourseLearningOutcome_Result" />
+  </message>
+  <message name="DeleteProgramRationale">
+    <part name="parameters" element="tns:DeleteProgramRationale" />
+  </message>
+  <message name="DeleteProgramRationale_Result">
+    <part name="parameters" element="tns:DeleteProgramRationale_Result" />
+  </message>
+  <message name="InstitutionCreateinvoice">
+    <part name="parameters" element="tns:InstitutionCreateinvoice" />
+  </message>
+  <message name="InstitutionCreateinvoice_Result">
+    <part name="parameters" element="tns:InstitutionCreateinvoice_Result" />
+  </message>
+  <message name="GetOutComenNumber">
+    <part name="parameters" element="tns:GetOutComenNumber" />
+  </message>
+  <message name="GetOutComenNumber_Result">
+    <part name="parameters" element="tns:GetOutComenNumber_Result" />
+  </message>
+  <message name="FnUserHelpEmaiRequest">
+    <part name="parameters" element="tns:FnUserHelpEmaiRequest" />
+  </message>
+  <message name="FnUserHelpEmaiRequest_Result">
+    <part name="parameters" element="tns:FnUserHelpEmaiRequest_Result" />
+  </message>
+  <message name="AddUniversityChancellors">
+    <part name="parameters" element="tns:AddUniversityChancellors" />
+  </message>
+  <message name="AddUniversityChancellors_Result">
+    <part name="parameters" element="tns:AddUniversityChancellors_Result" />
+  </message>
+  <message name="InitialGeneralDetails">
+    <part name="parameters" element="tns:InitialGeneralDetails" />
+  </message>
+  <message name="InitialGeneralDetails_Result">
+    <part name="parameters" element="tns:InitialGeneralDetails_Result" />
+  </message>
+  <message name="AddProgramRationale">
+    <part name="parameters" element="tns:AddProgramRationale" />
+  </message>
+  <message name="AddProgramRationale_Result">
+    <part name="parameters" element="tns:AddProgramRationale_Result" />
+  </message>
+  <message name="ValidateProgramRationale">
+    <part name="parameters" element="tns:ValidateProgramRationale" />
+  </message>
+  <message name="ValidateProgramRationale_Result">
+    <part name="parameters" element="tns:ValidateProgramRationale_Result" />
+  </message>
+  <message name="FnGenerateExitReport">
+    <part name="parameters" element="tns:FnGenerateExitReport" />
+  </message>
+  <message name="FnGenerateExitReport_Result">
+    <part name="parameters" element="tns:FnGenerateExitReport_Result" />
+  </message>
+  <message name="FnGenerateProgrammeFeedbackVoucher">
+    <part name="parameters" element="tns:FnGenerateProgrammeFeedbackVoucher" />
+  </message>
+  <message name="FnGenerateProgrammeFeedbackVoucher_Result">
+    <part name="parameters" element="tns:FnGenerateProgrammeFeedbackVoucher_Result" />
+  </message>
+  <message name="FnGenerateProgrammeEvaluationToool">
+    <part name="parameters" element="tns:FnGenerateProgrammeEvaluationToool" />
+  </message>
+  <message name="FnGenerateProgrammeEvaluationToool_Result">
+    <part name="parameters" element="tns:FnGenerateProgrammeEvaluationToool_Result" />
+  </message>
+  <message name="PortalResetPassword">
+    <part name="parameters" element="tns:PortalResetPassword" />
+  </message>
+  <message name="PortalResetPassword_Result">
+    <part name="parameters" element="tns:PortalResetPassword_Result" />
+  </message>
+  <message name="FngetRationaleDescription">
+    <part name="parameters" element="tns:FngetRationaleDescription" />
+  </message>
+  <message name="FngetRationaleDescription_Result">
+    <part name="parameters" element="tns:FngetRationaleDescription_Result" />
+  </message>
+  <message name="FngetUniversityDomain">
+    <part name="parameters" element="tns:FngetUniversityDomain" />
+  </message>
+  <message name="FngetUniversityDomain_Result">
+    <part name="parameters" element="tns:FngetUniversityDomain_Result" />
+  </message>
+  <message name="Fnuseraccountcreation">
+    <part name="parameters" element="tns:Fnuseraccountcreation" />
+  </message>
+  <message name="Fnuseraccountcreation_Result">
+    <part name="parameters" element="tns:Fnuseraccountcreation_Result" />
+  </message>
+  <message name="FnceateapplicationLines">
+    <part name="parameters" element="tns:FnceateapplicationLines" />
+  </message>
+  <message name="FnceateapplicationLines_Result">
+    <part name="parameters" element="tns:FnceateapplicationLines_Result" />
+  </message>
+  <message name="AccreditationApplication">
+    <part name="parameters" element="tns:AccreditationApplication" />
+  </message>
+  <message name="AccreditationApplication_Result">
+    <part name="parameters" element="tns:AccreditationApplication_Result" />
+  </message>
+  <message name="CreateCampus">
+    <part name="parameters" element="tns:CreateCampus" />
+  </message>
+  <message name="CreateCampus_Result">
+    <part name="parameters" element="tns:CreateCampus_Result" />
+  </message>
+  <message name="CreateOptionResponce">
+    <part name="parameters" element="tns:CreateOptionResponce" />
+  </message>
+  <message name="CreateOptionResponce_Result">
+    <part name="parameters" element="tns:CreateOptionResponce_Result" />
+  </message>
+  <message name="CreatAccreditationResponce">
+    <part name="parameters" element="tns:CreatAccreditationResponce" />
+  </message>
+  <message name="CreatAccreditationResponce_Result">
+    <part name="parameters" element="tns:CreatAccreditationResponce_Result" />
+  </message>
+  <message name="CreateStaff">
+    <part name="parameters" element="tns:CreateStaff" />
+  </message>
+  <message name="CreateStaff_Result">
+    <part name="parameters" element="tns:CreateStaff_Result" />
+  </message>
+  <message name="CreateTrainers">
+    <part name="parameters" element="tns:CreateTrainers" />
+  </message>
+  <message name="CreateTrainers_Result">
+    <part name="parameters" element="tns:CreateTrainers_Result" />
+  </message>
+  <message name="SittingCapacity">
+    <part name="parameters" element="tns:SittingCapacity" />
+  </message>
+  <message name="SittingCapacity_Result">
+    <part name="parameters" element="tns:SittingCapacity_Result" />
+  </message>
+  <message name="CreateRecomBooks">
+    <part name="parameters" element="tns:CreateRecomBooks" />
+  </message>
+  <message name="CreateRecomBooks_Result">
+    <part name="parameters" element="tns:CreateRecomBooks_Result" />
+  </message>
+  <message name="CreateComputerLab">
+    <part name="parameters" element="tns:CreateComputerLab" />
+  </message>
+  <message name="CreateComputerLab_Result">
+    <part name="parameters" element="tns:CreateComputerLab_Result" />
+  </message>
+  <message name="CreateCompDetails">
+    <part name="parameters" element="tns:CreateCompDetails" />
+  </message>
+  <message name="CreateCompDetails_Result">
+    <part name="parameters" element="tns:CreateCompDetails_Result" />
+  </message>
+  <message name="CreateICTAccessory">
+    <part name="parameters" element="tns:CreateICTAccessory" />
+  </message>
+  <message name="CreateICTAccessory_Result">
+    <part name="parameters" element="tns:CreateICTAccessory_Result" />
+  </message>
+  <message name="DeleteCampusLine">
+    <part name="parameters" element="tns:DeleteCampusLine" />
+  </message>
+  <message name="DeleteCampusLine_Result">
+    <part name="parameters" element="tns:DeleteCampusLine_Result" />
+  </message>
+  <message name="DeletestaffLine">
+    <part name="parameters" element="tns:DeletestaffLine" />
+  </message>
+  <message name="DeletestaffLine_Result">
+    <part name="parameters" element="tns:DeletestaffLine_Result" />
+  </message>
+  <message name="DeletetrainerLine">
+    <part name="parameters" element="tns:DeletetrainerLine" />
+  </message>
+  <message name="DeletetrainerLine_Result">
+    <part name="parameters" element="tns:DeletetrainerLine_Result" />
+  </message>
+  <message name="DeleteclassLine">
+    <part name="parameters" element="tns:DeleteclassLine" />
+  </message>
+  <message name="DeleteclassLine_Result">
+    <part name="parameters" element="tns:DeleteclassLine_Result" />
+  </message>
+  <message name="DeleteRefBookLine">
+    <part name="parameters" element="tns:DeleteRefBookLine" />
+  </message>
+  <message name="DeleteRefBookLine_Result">
+    <part name="parameters" element="tns:DeleteRefBookLine_Result" />
+  </message>
+  <message name="DeleteCompLine">
+    <part name="parameters" element="tns:DeleteCompLine" />
+  </message>
+  <message name="DeleteCompLine_Result">
+    <part name="parameters" element="tns:DeleteCompLine_Result" />
+  </message>
+  <message name="DeleteCompDetailsLine">
+    <part name="parameters" element="tns:DeleteCompDetailsLine" />
+  </message>
+  <message name="DeleteCompDetailsLine_Result">
+    <part name="parameters" element="tns:DeleteCompDetailsLine_Result" />
+  </message>
+  <message name="SelfEvaluationResponce">
+    <part name="parameters" element="tns:SelfEvaluationResponce" />
+  </message>
+  <message name="SelfEvaluationResponce_Result">
+    <part name="parameters" element="tns:SelfEvaluationResponce_Result" />
+  </message>
+  <message name="PrintCertificate">
+    <part name="parameters" element="tns:PrintCertificate" />
+  </message>
+  <message name="PrintCertificate_Result">
+    <part name="parameters" element="tns:PrintCertificate_Result" />
+  </message>
+  <message name="SubmitApplication">
+    <part name="parameters" element="tns:SubmitApplication" />
+  </message>
+  <message name="SubmitApplication_Result">
+    <part name="parameters" element="tns:SubmitApplication_Result" />
+  </message>
+  <message name="SendEmail">
+    <part name="parameters" element="tns:SendEmail" />
+  </message>
+  <message name="SendEmail_Result">
+    <part name="parameters" element="tns:SendEmail_Result" />
+  </message>
+  <message name="CreatAccreditationSubQResponce">
+    <part name="parameters" element="tns:CreatAccreditationSubQResponce" />
+  </message>
+  <message name="CreatAccreditationSubQResponce_Result">
+    <part name="parameters" element="tns:CreatAccreditationSubQResponce_Result" />
+  </message>
+  <message name="DeleteICTLine">
+    <part name="parameters" element="tns:DeleteICTLine" />
+  </message>
+  <message name="DeleteICTLine_Result">
+    <part name="parameters" element="tns:DeleteICTLine_Result" />
+  </message>
+  <message name="SelfEvalutionApplication">
+    <part name="parameters" element="tns:SelfEvalutionApplication" />
+  </message>
+  <message name="SelfEvalutionApplication_Result">
+    <part name="parameters" element="tns:SelfEvalutionApplication_Result" />
+  </message>
+  <message name="PrintScore">
+    <part name="parameters" element="tns:PrintScore" />
+  </message>
+  <message name="PrintScore_Result">
+    <part name="parameters" element="tns:PrintScore_Result" />
+  </message>
+  <message name="PrintdetailedReport">
+    <part name="parameters" element="tns:PrintdetailedReport" />
+  </message>
+  <message name="PrintdetailedReport_Result">
+    <part name="parameters" element="tns:PrintdetailedReport_Result" />
+  </message>
+  <message name="ConfirmAccreditationPayment">
+    <part name="parameters" element="tns:ConfirmAccreditationPayment" />
+  </message>
+  <message name="ConfirmAccreditationPayment_Result">
+    <part name="parameters" element="tns:ConfirmAccreditationPayment_Result" />
+  </message>
+  <message name="FnCreateApplicantAccountRequest">
+    <part name="parameters" element="tns:FnCreateApplicantAccountRequest" />
+  </message>
+  <message name="FnCreateApplicantAccountRequest_Result">
+    <part name="parameters" element="tns:FnCreateApplicantAccountRequest_Result" />
+  </message>
+  <message name="PrintdApplicationReport">
+    <part name="parameters" element="tns:PrintdApplicationReport" />
+  </message>
+  <message name="PrintdApplicationReport_Result">
+    <part name="parameters" element="tns:PrintdApplicationReport_Result" />
+  </message>
+  <message name="SendEmailAccountCreation">
+    <part name="parameters" element="tns:SendEmailAccountCreation" />
+  </message>
+  <message name="SendEmailAccountCreation_Result">
+    <part name="parameters" element="tns:SendEmailAccountCreation_Result" />
+  </message>
+  <message name="Printdsummeryscore">
+    <part name="parameters" element="tns:Printdsummeryscore" />
+  </message>
+  <message name="Printdsummeryscore_Result">
+    <part name="parameters" element="tns:Printdsummeryscore_Result" />
+  </message>
+  <message name="FnResetPassword">
+    <part name="parameters" element="tns:FnResetPassword" />
+  </message>
+  <message name="FnResetPassword_Result">
+    <part name="parameters" element="tns:FnResetPassword_Result" />
+  </message>
+  <message name="ResetSendEmail">
+    <part name="parameters" element="tns:ResetSendEmail" />
+  </message>
+  <message name="ResetSendEmail_Result">
+    <part name="parameters" element="tns:ResetSendEmail_Result" />
+  </message>
+  <message name="FnChangeStudentPassword">
+    <part name="parameters" element="tns:FnChangeStudentPassword" />
+  </message>
+  <message name="FnChangeStudentPassword_Result">
+    <part name="parameters" element="tns:FnChangeStudentPassword_Result" />
+  </message>
+  <message name="AddAccreditationSharepointLinks">
+    <part name="parameters" element="tns:AddAccreditationSharepointLinks" />
+  </message>
+  <message name="AddAccreditationSharepointLinks_Result">
+    <part name="parameters" element="tns:AddAccreditationSharepointLinks_Result" />
+  </message>
+  <portType name="CuePortal_Port">
+    <operation name="GetApplicationNumber">
+      <input name="GetApplicationNumber" message="tns:GetApplicationNumber" />
+      <output name="GetApplicationNumber_Result" message="tns:GetApplicationNumber_Result" />
+    </operation>
+    <operation name="ConfirmPayment">
+      <input name="ConfirmPayment" message="tns:ConfirmPayment" />
+      <output name="ConfirmPayment_Result" message="tns:ConfirmPayment_Result" />
+    </operation>
+    <operation name="Approve">
+      <input name="Approve" message="tns:Approve" />
+      <output name="Approve_Result" message="tns:Approve_Result" />
+    </operation>
+    <operation name="ApplyForAccreditation">
+      <input name="ApplyForAccreditation" message="tns:ApplyForAccreditation" />
+      <output name="ApplyForAccreditation_Result" message="tns:ApplyForAccreditation_Result" />
+    </operation>
+    <operation name="DeleteSponsors">
+      <input name="DeleteSponsors" message="tns:DeleteSponsors" />
+      <output name="DeleteSponsors_Result" message="tns:DeleteSponsors_Result" />
+    </operation>
+    <operation name="DeleteDepartments">
+      <input name="DeleteDepartments" message="tns:DeleteDepartments" />
+      <output name="DeleteDepartments_Result" message="tns:DeleteDepartments_Result" />
+    </operation>
+    <operation name="DeleteSchools">
+      <input name="DeleteSchools" message="tns:DeleteSchools" />
+      <output name="DeleteSchools_Result" message="tns:DeleteSchools_Result" />
+    </operation>
+    <operation name="DeleteAffiliations">
+      <input name="DeleteAffiliations" message="tns:DeleteAffiliations" />
+      <output name="DeleteAffiliations_Result" message="tns:DeleteAffiliations_Result" />
+    </operation>
+    <operation name="DeleteChancellors">
+      <input name="DeleteChancellors" message="tns:DeleteChancellors" />
+      <output name="DeleteChancellors_Result" message="tns:DeleteChancellors_Result" />
+    </operation>
+    <operation name="GetInstitutionNumber">
+      <input name="GetInstitutionNumber" message="tns:GetInstitutionNumber" />
+      <output name="GetInstitutionNumber_Result" message="tns:GetInstitutionNumber_Result" />
+    </operation>
+    <operation name="Deletekeymilestone">
+      <input name="Deletekeymilestone" message="tns:Deletekeymilestone" />
+      <output name="Deletekeymilestone_Result" message="tns:Deletekeymilestone_Result" />
+    </operation>
+    <operation name="EditChancellors">
+      <input name="EditChancellors" message="tns:EditChancellors" />
+      <output name="EditChancellors_Result" message="tns:EditChancellors_Result" />
+    </operation>
+    <operation name="EditAffiliations">
+      <input name="EditAffiliations" message="tns:EditAffiliations" />
+      <output name="EditAffiliations_Result" message="tns:EditAffiliations_Result" />
+    </operation>
+    <operation name="EditSponsor">
+      <input name="EditSponsor" message="tns:EditSponsor" />
+      <output name="EditSponsor_Result" message="tns:EditSponsor_Result" />
+    </operation>
+    <operation name="EditKeyMilestones">
+      <input name="EditKeyMilestones" message="tns:EditKeyMilestones" />
+      <output name="EditKeyMilestones_Result" message="tns:EditKeyMilestones_Result" />
+    </operation>
+    <operation name="EditSchool">
+      <input name="EditSchool" message="tns:EditSchool" />
+      <output name="EditSchool_Result" message="tns:EditSchool_Result" />
+    </operation>
+    <operation name="EditDepartment">
+      <input name="EditDepartment" message="tns:EditDepartment" />
+      <output name="EditDepartment_Result" message="tns:EditDepartment_Result" />
+    </operation>
+    <operation name="EditGeneralDetails">
+      <input name="EditGeneralDetails" message="tns:EditGeneralDetails" />
+      <output name="EditGeneralDetails_Result" message="tns:EditGeneralDetails_Result" />
+    </operation>
+    <operation name="AddMissionDetails">
+      <input name="AddMissionDetails" message="tns:AddMissionDetails" />
+      <output name="AddMissionDetails_Result" message="tns:AddMissionDetails_Result" />
+    </operation>
+    <operation name="AddPhilosophy">
+      <input name="AddPhilosophy" message="tns:AddPhilosophy" />
+      <output name="AddPhilosophy_Result" message="tns:AddPhilosophy_Result" />
+    </operation>
+    <operation name="AddMilestone">
+      <input name="AddMilestone" message="tns:AddMilestone" />
+      <output name="AddMilestone_Result" message="tns:AddMilestone_Result" />
+    </operation>
+    <operation name="AddAffiliations">
+      <input name="AddAffiliations" message="tns:AddAffiliations" />
+      <output name="AddAffiliations_Result" message="tns:AddAffiliations_Result" />
+    </operation>
+    <operation name="AddschoolFaculties">
+      <input name="AddschoolFaculties" message="tns:AddschoolFaculties" />
+      <output name="AddschoolFaculties_Result" message="tns:AddschoolFaculties_Result" />
+    </operation>
+    <operation name="AddDepartments">
+      <input name="AddDepartments" message="tns:AddDepartments" />
+      <output name="AddDepartments_Result" message="tns:AddDepartments_Result" />
+    </operation>
+    <operation name="AddSponsors">
+      <input name="AddSponsors" message="tns:AddSponsors" />
+      <output name="AddSponsors_Result" message="tns:AddSponsors_Result" />
+    </operation>
+    <operation name="AddHistory">
+      <input name="AddHistory" message="tns:AddHistory" />
+      <output name="AddHistory_Result" message="tns:AddHistory_Result" />
+    </operation>
+    <operation name="Editphylosophy">
+      <input name="Editphylosophy" message="tns:Editphylosophy" />
+      <output name="Editphylosophy_Result" message="tns:Editphylosophy_Result" />
+    </operation>
+    <operation name="ValidateLearningOutcome2">
+      <input name="ValidateLearningOutcome2" message="tns:ValidateLearningOutcome2" />
+      <output name="ValidateLearningOutcome2_Result" message="tns:ValidateLearningOutcome2_Result" />
+    </operation>
+    <operation name="AddLearningOutcome">
+      <input name="AddLearningOutcome" message="tns:AddLearningOutcome" />
+      <output name="AddLearningOutcome_Result" message="tns:AddLearningOutcome_Result" />
+    </operation>
+    <operation name="EditProgramRationale">
+      <input name="EditProgramRationale" message="tns:EditProgramRationale" />
+      <output name="EditProgramRationale_Result" message="tns:EditProgramRationale_Result" />
+    </operation>
+    <operation name="EditSpecializationAreas">
+      <input name="EditSpecializationAreas" message="tns:EditSpecializationAreas" />
+      <output name="EditSpecializationAreas_Result" message="tns:EditSpecializationAreas_Result" />
+    </operation>
+    <operation name="AddSpecializationAreas">
+      <input name="AddSpecializationAreas" message="tns:AddSpecializationAreas" />
+      <output name="AddSpecializationAreas_Result" message="tns:AddSpecializationAreas_Result" />
+    </operation>
+    <operation name="EditLearningOutcome">
+      <input name="EditLearningOutcome" message="tns:EditLearningOutcome" />
+      <output name="EditLearningOutcome_Result" message="tns:EditLearningOutcome_Result" />
+    </operation>
+    <operation name="DeleteLearningOutcome">
+      <input name="DeleteLearningOutcome" message="tns:DeleteLearningOutcome" />
+      <output name="DeleteLearningOutcome_Result" message="tns:DeleteLearningOutcome_Result" />
+    </operation>
+    <operation name="DeleteSpecializationArea">
+      <input name="DeleteSpecializationArea" message="tns:DeleteSpecializationArea" />
+      <output name="DeleteSpecializationArea_Result" message="tns:DeleteSpecializationArea_Result" />
+    </operation>
+    <operation name="AddDeliveryMode">
+      <input name="AddDeliveryMode" message="tns:AddDeliveryMode" />
+      <output name="AddDeliveryMode_Result" message="tns:AddDeliveryMode_Result" />
+    </operation>
+    <operation name="DeleteDeliveryMode">
+      <input name="DeleteDeliveryMode" message="tns:DeleteDeliveryMode" />
+      <output name="DeleteDeliveryMode_Result" message="tns:DeleteDeliveryMode_Result" />
+    </operation>
+    <operation name="VlidateDeliveryMode2">
+      <input name="VlidateDeliveryMode2" message="tns:VlidateDeliveryMode2" />
+      <output name="VlidateDeliveryMode2_Result" message="tns:VlidateDeliveryMode2_Result" />
+    </operation>
+    <operation name="AddGradingSystem">
+      <input name="AddGradingSystem" message="tns:AddGradingSystem" />
+      <output name="AddGradingSystem_Result" message="tns:AddGradingSystem_Result" />
+    </operation>
+    <operation name="ValidateGradingSystem2">
+      <input name="ValidateGradingSystem2" message="tns:ValidateGradingSystem2" />
+      <output name="ValidateGradingSystem2_Result" message="tns:ValidateGradingSystem2_Result" />
+    </operation>
+    <operation name="EditGradingSystem">
+      <input name="EditGradingSystem" message="tns:EditGradingSystem" />
+      <output name="EditGradingSystem_Result" message="tns:EditGradingSystem_Result" />
+    </operation>
+    <operation name="DeleteGradingSystem">
+      <input name="DeleteGradingSystem" message="tns:DeleteGradingSystem" />
+      <output name="DeleteGradingSystem_Result" message="tns:DeleteGradingSystem_Result" />
+    </operation>
+    <operation name="AddUnit">
+      <input name="AddUnit" message="tns:AddUnit" />
+      <output name="AddUnit_Result" message="tns:AddUnit_Result" />
+    </operation>
+    <operation name="EditUnit">
+      <input name="EditUnit" message="tns:EditUnit" />
+      <output name="EditUnit_Result" message="tns:EditUnit_Result" />
+    </operation>
+    <operation name="DeleteUnit">
+      <input name="DeleteUnit" message="tns:DeleteUnit" />
+      <output name="DeleteUnit_Result" message="tns:DeleteUnit_Result" />
+    </operation>
+    <operation name="AddInstructionalMethod">
+      <input name="AddInstructionalMethod" message="tns:AddInstructionalMethod" />
+      <output name="AddInstructionalMethod_Result" message="tns:AddInstructionalMethod_Result" />
+    </operation>
+    <operation name="ValidateInstructionalMethod">
+      <input name="ValidateInstructionalMethod" message="tns:ValidateInstructionalMethod" />
+      <output name="ValidateInstructionalMethod_Result" message="tns:ValidateInstructionalMethod_Result" />
+    </operation>
+    <operation name="AddInstructionalMethodEntry">
+      <input name="AddInstructionalMethodEntry" message="tns:AddInstructionalMethodEntry" />
+      <output name="AddInstructionalMethodEntry_Result" message="tns:AddInstructionalMethodEntry_Result" />
+    </operation>
+    <operation name="DeleteInstructionalMethod">
+      <input name="DeleteInstructionalMethod" message="tns:DeleteInstructionalMethod" />
+      <output name="DeleteInstructionalMethod_Result" message="tns:DeleteInstructionalMethod_Result" />
+    </operation>
+    <operation name="AddCourseLearningOutcome">
+      <input name="AddCourseLearningOutcome" message="tns:AddCourseLearningOutcome" />
+      <output name="AddCourseLearningOutcome_Result" message="tns:AddCourseLearningOutcome_Result" />
+    </operation>
+    <operation name="AddBook">
+      <input name="AddBook" message="tns:AddBook" />
+      <output name="AddBook_Result" message="tns:AddBook_Result" />
+    </operation>
+    <operation name="ValidateBook">
+      <input name="ValidateBook" message="tns:ValidateBook" />
+      <output name="ValidateBook_Result" message="tns:ValidateBook_Result" />
+    </operation>
+    <operation name="EditBook">
+      <input name="EditBook" message="tns:EditBook" />
+      <output name="EditBook_Result" message="tns:EditBook_Result" />
+    </operation>
+    <operation name="DeleteBook">
+      <input name="DeleteBook" message="tns:DeleteBook" />
+      <output name="DeleteBook_Result" message="tns:DeleteBook_Result" />
+    </operation>
+    <operation name="SaveDocumentsInstProgrammes">
+      <input name="SaveDocumentsInstProgrammes" message="tns:SaveDocumentsInstProgrammes" />
+      <output name="SaveDocumentsInstProgrammes_Result" message="tns:SaveDocumentsInstProgrammes_Result" />
+    </operation>
+    <operation name="ConfirmPaymentsInstitution">
+      <input name="ConfirmPaymentsInstitution" message="tns:ConfirmPaymentsInstitution" />
+      <output name="ConfirmPaymentsInstitution_Result" message="tns:ConfirmPaymentsInstitution_Result" />
+    </operation>
+    <operation name="EditCourseLearningOutcome">
+      <input name="EditCourseLearningOutcome" message="tns:EditCourseLearningOutcome" />
+      <output name="EditCourseLearningOutcome_Result" message="tns:EditCourseLearningOutcome_Result" />
+    </operation>
+    <operation name="DeleteCourseLearningOutcome">
+      <input name="DeleteCourseLearningOutcome" message="tns:DeleteCourseLearningOutcome" />
+      <output name="DeleteCourseLearningOutcome_Result" message="tns:DeleteCourseLearningOutcome_Result" />
+    </operation>
+    <operation name="DeleteProgramRationale">
+      <input name="DeleteProgramRationale" message="tns:DeleteProgramRationale" />
+      <output name="DeleteProgramRationale_Result" message="tns:DeleteProgramRationale_Result" />
+    </operation>
+    <operation name="InstitutionCreateinvoice">
+      <input name="InstitutionCreateinvoice" message="tns:InstitutionCreateinvoice" />
+      <output name="InstitutionCreateinvoice_Result" message="tns:InstitutionCreateinvoice_Result" />
+    </operation>
+    <operation name="GetOutComenNumber">
+      <input name="GetOutComenNumber" message="tns:GetOutComenNumber" />
+      <output name="GetOutComenNumber_Result" message="tns:GetOutComenNumber_Result" />
+    </operation>
+    <operation name="FnUserHelpEmaiRequest">
+      <input name="FnUserHelpEmaiRequest" message="tns:FnUserHelpEmaiRequest" />
+      <output name="FnUserHelpEmaiRequest_Result" message="tns:FnUserHelpEmaiRequest_Result" />
+    </operation>
+    <operation name="AddUniversityChancellors">
+      <input name="AddUniversityChancellors" message="tns:AddUniversityChancellors" />
+      <output name="AddUniversityChancellors_Result" message="tns:AddUniversityChancellors_Result" />
+    </operation>
+    <operation name="InitialGeneralDetails">
+      <input name="InitialGeneralDetails" message="tns:InitialGeneralDetails" />
+      <output name="InitialGeneralDetails_Result" message="tns:InitialGeneralDetails_Result" />
+    </operation>
+    <operation name="AddProgramRationale">
+      <input name="AddProgramRationale" message="tns:AddProgramRationale" />
+      <output name="AddProgramRationale_Result" message="tns:AddProgramRationale_Result" />
+    </operation>
+    <operation name="ValidateProgramRationale">
+      <input name="ValidateProgramRationale" message="tns:ValidateProgramRationale" />
+      <output name="ValidateProgramRationale_Result" message="tns:ValidateProgramRationale_Result" />
+    </operation>
+    <operation name="FnGenerateExitReport">
+      <input name="FnGenerateExitReport" message="tns:FnGenerateExitReport" />
+      <output name="FnGenerateExitReport_Result" message="tns:FnGenerateExitReport_Result" />
+    </operation>
+    <operation name="FnGenerateProgrammeFeedbackVoucher">
+      <input name="FnGenerateProgrammeFeedbackVoucher" message="tns:FnGenerateProgrammeFeedbackVoucher" />
+      <output name="FnGenerateProgrammeFeedbackVoucher_Result" message="tns:FnGenerateProgrammeFeedbackVoucher_Result" />
+    </operation>
+    <operation name="FnGenerateProgrammeEvaluationToool">
+      <input name="FnGenerateProgrammeEvaluationToool" message="tns:FnGenerateProgrammeEvaluationToool" />
+      <output name="FnGenerateProgrammeEvaluationToool_Result" message="tns:FnGenerateProgrammeEvaluationToool_Result" />
+    </operation>
+    <operation name="PortalResetPassword">
+      <input name="PortalResetPassword" message="tns:PortalResetPassword" />
+      <output name="PortalResetPassword_Result" message="tns:PortalResetPassword_Result" />
+    </operation>
+    <operation name="FngetRationaleDescription">
+      <input name="FngetRationaleDescription" message="tns:FngetRationaleDescription" />
+      <output name="FngetRationaleDescription_Result" message="tns:FngetRationaleDescription_Result" />
+    </operation>
+    <operation name="FngetUniversityDomain">
+      <input name="FngetUniversityDomain" message="tns:FngetUniversityDomain" />
+      <output name="FngetUniversityDomain_Result" message="tns:FngetUniversityDomain_Result" />
+    </operation>
+    <operation name="Fnuseraccountcreation">
+      <input name="Fnuseraccountcreation" message="tns:Fnuseraccountcreation" />
+      <output name="Fnuseraccountcreation_Result" message="tns:Fnuseraccountcreation_Result" />
+    </operation>
+    <operation name="FnceateapplicationLines">
+      <input name="FnceateapplicationLines" message="tns:FnceateapplicationLines" />
+      <output name="FnceateapplicationLines_Result" message="tns:FnceateapplicationLines_Result" />
+    </operation>
+    <operation name="AccreditationApplication">
+      <input name="AccreditationApplication" message="tns:AccreditationApplication" />
+      <output name="AccreditationApplication_Result" message="tns:AccreditationApplication_Result" />
+    </operation>
+    <operation name="CreateCampus">
+      <input name="CreateCampus" message="tns:CreateCampus" />
+      <output name="CreateCampus_Result" message="tns:CreateCampus_Result" />
+    </operation>
+    <operation name="CreateOptionResponce">
+      <input name="CreateOptionResponce" message="tns:CreateOptionResponce" />
+      <output name="CreateOptionResponce_Result" message="tns:CreateOptionResponce_Result" />
+    </operation>
+    <operation name="CreatAccreditationResponce">
+      <input name="CreatAccreditationResponce" message="tns:CreatAccreditationResponce" />
+      <output name="CreatAccreditationResponce_Result" message="tns:CreatAccreditationResponce_Result" />
+    </operation>
+    <operation name="CreateStaff">
+      <input name="CreateStaff" message="tns:CreateStaff" />
+      <output name="CreateStaff_Result" message="tns:CreateStaff_Result" />
+    </operation>
+    <operation name="CreateTrainers">
+      <input name="CreateTrainers" message="tns:CreateTrainers" />
+      <output name="CreateTrainers_Result" message="tns:CreateTrainers_Result" />
+    </operation>
+    <operation name="SittingCapacity">
+      <input name="SittingCapacity" message="tns:SittingCapacity" />
+      <output name="SittingCapacity_Result" message="tns:SittingCapacity_Result" />
+    </operation>
+    <operation name="CreateRecomBooks">
+      <input name="CreateRecomBooks" message="tns:CreateRecomBooks" />
+      <output name="CreateRecomBooks_Result" message="tns:CreateRecomBooks_Result" />
+    </operation>
+    <operation name="CreateComputerLab">
+      <input name="CreateComputerLab" message="tns:CreateComputerLab" />
+      <output name="CreateComputerLab_Result" message="tns:CreateComputerLab_Result" />
+    </operation>
+    <operation name="CreateCompDetails">
+      <input name="CreateCompDetails" message="tns:CreateCompDetails" />
+      <output name="CreateCompDetails_Result" message="tns:CreateCompDetails_Result" />
+    </operation>
+    <operation name="CreateICTAccessory">
+      <input name="CreateICTAccessory" message="tns:CreateICTAccessory" />
+      <output name="CreateICTAccessory_Result" message="tns:CreateICTAccessory_Result" />
+    </operation>
+    <operation name="DeleteCampusLine">
+      <input name="DeleteCampusLine" message="tns:DeleteCampusLine" />
+      <output name="DeleteCampusLine_Result" message="tns:DeleteCampusLine_Result" />
+    </operation>
+    <operation name="DeletestaffLine">
+      <input name="DeletestaffLine" message="tns:DeletestaffLine" />
+      <output name="DeletestaffLine_Result" message="tns:DeletestaffLine_Result" />
+    </operation>
+    <operation name="DeletetrainerLine">
+      <input name="DeletetrainerLine" message="tns:DeletetrainerLine" />
+      <output name="DeletetrainerLine_Result" message="tns:DeletetrainerLine_Result" />
+    </operation>
+    <operation name="DeleteclassLine">
+      <input name="DeleteclassLine" message="tns:DeleteclassLine" />
+      <output name="DeleteclassLine_Result" message="tns:DeleteclassLine_Result" />
+    </operation>
+    <operation name="DeleteRefBookLine">
+      <input name="DeleteRefBookLine" message="tns:DeleteRefBookLine" />
+      <output name="DeleteRefBookLine_Result" message="tns:DeleteRefBookLine_Result" />
+    </operation>
+    <operation name="DeleteCompLine">
+      <input name="DeleteCompLine" message="tns:DeleteCompLine" />
+      <output name="DeleteCompLine_Result" message="tns:DeleteCompLine_Result" />
+    </operation>
+    <operation name="DeleteCompDetailsLine">
+      <input name="DeleteCompDetailsLine" message="tns:DeleteCompDetailsLine" />
+      <output name="DeleteCompDetailsLine_Result" message="tns:DeleteCompDetailsLine_Result" />
+    </operation>
+    <operation name="SelfEvaluationResponce">
+      <input name="SelfEvaluationResponce" message="tns:SelfEvaluationResponce" />
+      <output name="SelfEvaluationResponce_Result" message="tns:SelfEvaluationResponce_Result" />
+    </operation>
+    <operation name="PrintCertificate">
+      <input name="PrintCertificate" message="tns:PrintCertificate" />
+      <output name="PrintCertificate_Result" message="tns:PrintCertificate_Result" />
+    </operation>
+    <operation name="SubmitApplication">
+      <input name="SubmitApplication" message="tns:SubmitApplication" />
+      <output name="SubmitApplication_Result" message="tns:SubmitApplication_Result" />
+    </operation>
+    <operation name="SendEmail">
+      <input name="SendEmail" message="tns:SendEmail" />
+      <output name="SendEmail_Result" message="tns:SendEmail_Result" />
+    </operation>
+    <operation name="CreatAccreditationSubQResponce">
+      <input name="CreatAccreditationSubQResponce" message="tns:CreatAccreditationSubQResponce" />
+      <output name="CreatAccreditationSubQResponce_Result" message="tns:CreatAccreditationSubQResponce_Result" />
+    </operation>
+    <operation name="DeleteICTLine">
+      <input name="DeleteICTLine" message="tns:DeleteICTLine" />
+      <output name="DeleteICTLine_Result" message="tns:DeleteICTLine_Result" />
+    </operation>
+    <operation name="SelfEvalutionApplication">
+      <input name="SelfEvalutionApplication" message="tns:SelfEvalutionApplication" />
+      <output name="SelfEvalutionApplication_Result" message="tns:SelfEvalutionApplication_Result" />
+    </operation>
+    <operation name="PrintScore">
+      <input name="PrintScore" message="tns:PrintScore" />
+      <output name="PrintScore_Result" message="tns:PrintScore_Result" />
+    </operation>
+    <operation name="PrintdetailedReport">
+      <input name="PrintdetailedReport" message="tns:PrintdetailedReport" />
+      <output name="PrintdetailedReport_Result" message="tns:PrintdetailedReport_Result" />
+    </operation>
+    <operation name="ConfirmAccreditationPayment">
+      <input name="ConfirmAccreditationPayment" message="tns:ConfirmAccreditationPayment" />
+      <output name="ConfirmAccreditationPayment_Result" message="tns:ConfirmAccreditationPayment_Result" />
+    </operation>
+    <operation name="FnCreateApplicantAccountRequest">
+      <input name="FnCreateApplicantAccountRequest" message="tns:FnCreateApplicantAccountRequest" />
+      <output name="FnCreateApplicantAccountRequest_Result" message="tns:FnCreateApplicantAccountRequest_Result" />
+    </operation>
+    <operation name="PrintdApplicationReport">
+      <input name="PrintdApplicationReport" message="tns:PrintdApplicationReport" />
+      <output name="PrintdApplicationReport_Result" message="tns:PrintdApplicationReport_Result" />
+    </operation>
+    <operation name="SendEmailAccountCreation">
+      <input name="SendEmailAccountCreation" message="tns:SendEmailAccountCreation" />
+      <output name="SendEmailAccountCreation_Result" message="tns:SendEmailAccountCreation_Result" />
+    </operation>
+    <operation name="Printdsummeryscore">
+      <input name="Printdsummeryscore" message="tns:Printdsummeryscore" />
+      <output name="Printdsummeryscore_Result" message="tns:Printdsummeryscore_Result" />
+    </operation>
+    <operation name="FnResetPassword">
+      <input name="FnResetPassword" message="tns:FnResetPassword" />
+      <output name="FnResetPassword_Result" message="tns:FnResetPassword_Result" />
+    </operation>
+    <operation name="ResetSendEmail">
+      <input name="ResetSendEmail" message="tns:ResetSendEmail" />
+      <output name="ResetSendEmail_Result" message="tns:ResetSendEmail_Result" />
+    </operation>
+    <operation name="FnChangeStudentPassword">
+      <input name="FnChangeStudentPassword" message="tns:FnChangeStudentPassword" />
+      <output name="FnChangeStudentPassword_Result" message="tns:FnChangeStudentPassword_Result" />
+    </operation>
+    <operation name="AddAccreditationSharepointLinks">
+      <input name="AddAccreditationSharepointLinks" message="tns:AddAccreditationSharepointLinks" />
+      <output name="AddAccreditationSharepointLinks_Result" message="tns:AddAccreditationSharepointLinks_Result" />
+    </operation>
+  </portType>
+  <binding name="CuePortal_Binding" type="tns:CuePortal_Port">
+    <binding transport="http://schemas.xmlsoap.org/soap/http" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    <operation name="GetApplicationNumber">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:GetApplicationNumber" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetApplicationNumber">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetApplicationNumber_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="ConfirmPayment">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:ConfirmPayment" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="ConfirmPayment">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="ConfirmPayment_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="Approve">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:Approve" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="Approve">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="Approve_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="ApplyForAccreditation">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:ApplyForAccreditation" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="ApplyForAccreditation">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="ApplyForAccreditation_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="DeleteSponsors">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:DeleteSponsors" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="DeleteSponsors">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="DeleteSponsors_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="DeleteDepartments">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:DeleteDepartments" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="DeleteDepartments">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="DeleteDepartments_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="DeleteSchools">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:DeleteSchools" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="DeleteSchools">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="DeleteSchools_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="DeleteAffiliations">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:DeleteAffiliations" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="DeleteAffiliations">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="DeleteAffiliations_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="DeleteChancellors">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:DeleteChancellors" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="DeleteChancellors">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="DeleteChancellors_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetInstitutionNumber">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:GetInstitutionNumber" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetInstitutionNumber">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetInstitutionNumber_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="Deletekeymilestone">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:Deletekeymilestone" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="Deletekeymilestone">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="Deletekeymilestone_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="EditChancellors">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:EditChancellors" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="EditChancellors">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="EditChancellors_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="EditAffiliations">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:EditAffiliations" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="EditAffiliations">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="EditAffiliations_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="EditSponsor">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:EditSponsor" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="EditSponsor">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="EditSponsor_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="EditKeyMilestones">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:EditKeyMilestones" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="EditKeyMilestones">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="EditKeyMilestones_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="EditSchool">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:EditSchool" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="EditSchool">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="EditSchool_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="EditDepartment">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:EditDepartment" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="EditDepartment">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="EditDepartment_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="EditGeneralDetails">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:EditGeneralDetails" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="EditGeneralDetails">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="EditGeneralDetails_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="AddMissionDetails">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:AddMissionDetails" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="AddMissionDetails">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="AddMissionDetails_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="AddPhilosophy">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:AddPhilosophy" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="AddPhilosophy">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="AddPhilosophy_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="AddMilestone">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:AddMilestone" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="AddMilestone">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="AddMilestone_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="AddAffiliations">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:AddAffiliations" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="AddAffiliations">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="AddAffiliations_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="AddschoolFaculties">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:AddschoolFaculties" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="AddschoolFaculties">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="AddschoolFaculties_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="AddDepartments">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:AddDepartments" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="AddDepartments">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="AddDepartments_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="AddSponsors">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:AddSponsors" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="AddSponsors">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="AddSponsors_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="AddHistory">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:AddHistory" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="AddHistory">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="AddHistory_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="Editphylosophy">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:Editphylosophy" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="Editphylosophy">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="Editphylosophy_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="ValidateLearningOutcome2">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:ValidateLearningOutcome2" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="ValidateLearningOutcome2">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="ValidateLearningOutcome2_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="AddLearningOutcome">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:AddLearningOutcome" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="AddLearningOutcome">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="AddLearningOutcome_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="EditProgramRationale">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:EditProgramRationale" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="EditProgramRationale">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="EditProgramRationale_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="EditSpecializationAreas">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:EditSpecializationAreas" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="EditSpecializationAreas">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="EditSpecializationAreas_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="AddSpecializationAreas">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:AddSpecializationAreas" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="AddSpecializationAreas">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="AddSpecializationAreas_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="EditLearningOutcome">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:EditLearningOutcome" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="EditLearningOutcome">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="EditLearningOutcome_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="DeleteLearningOutcome">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:DeleteLearningOutcome" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="DeleteLearningOutcome">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="DeleteLearningOutcome_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="DeleteSpecializationArea">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:DeleteSpecializationArea" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="DeleteSpecializationArea">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="DeleteSpecializationArea_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="AddDeliveryMode">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:AddDeliveryMode" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="AddDeliveryMode">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="AddDeliveryMode_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="DeleteDeliveryMode">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:DeleteDeliveryMode" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="DeleteDeliveryMode">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="DeleteDeliveryMode_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="VlidateDeliveryMode2">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:VlidateDeliveryMode2" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="VlidateDeliveryMode2">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="VlidateDeliveryMode2_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="AddGradingSystem">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:AddGradingSystem" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="AddGradingSystem">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="AddGradingSystem_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="ValidateGradingSystem2">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:ValidateGradingSystem2" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="ValidateGradingSystem2">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="ValidateGradingSystem2_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="EditGradingSystem">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:EditGradingSystem" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="EditGradingSystem">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="EditGradingSystem_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="DeleteGradingSystem">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:DeleteGradingSystem" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="DeleteGradingSystem">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="DeleteGradingSystem_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="AddUnit">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:AddUnit" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="AddUnit">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="AddUnit_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="EditUnit">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:EditUnit" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="EditUnit">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="EditUnit_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="DeleteUnit">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:DeleteUnit" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="DeleteUnit">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="DeleteUnit_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="AddInstructionalMethod">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:AddInstructionalMethod" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="AddInstructionalMethod">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="AddInstructionalMethod_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="ValidateInstructionalMethod">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:ValidateInstructionalMethod" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="ValidateInstructionalMethod">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="ValidateInstructionalMethod_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="AddInstructionalMethodEntry">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:AddInstructionalMethodEntry" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="AddInstructionalMethodEntry">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="AddInstructionalMethodEntry_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="DeleteInstructionalMethod">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:DeleteInstructionalMethod" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="DeleteInstructionalMethod">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="DeleteInstructionalMethod_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="AddCourseLearningOutcome">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:AddCourseLearningOutcome" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="AddCourseLearningOutcome">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="AddCourseLearningOutcome_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="AddBook">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:AddBook" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="AddBook">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="AddBook_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="ValidateBook">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:ValidateBook" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="ValidateBook">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="ValidateBook_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="EditBook">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:EditBook" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="EditBook">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="EditBook_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="DeleteBook">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:DeleteBook" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="DeleteBook">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="DeleteBook_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SaveDocumentsInstProgrammes">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:SaveDocumentsInstProgrammes" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SaveDocumentsInstProgrammes">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SaveDocumentsInstProgrammes_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="ConfirmPaymentsInstitution">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:ConfirmPaymentsInstitution" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="ConfirmPaymentsInstitution">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="ConfirmPaymentsInstitution_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="EditCourseLearningOutcome">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:EditCourseLearningOutcome" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="EditCourseLearningOutcome">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="EditCourseLearningOutcome_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="DeleteCourseLearningOutcome">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:DeleteCourseLearningOutcome" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="DeleteCourseLearningOutcome">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="DeleteCourseLearningOutcome_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="DeleteProgramRationale">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:DeleteProgramRationale" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="DeleteProgramRationale">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="DeleteProgramRationale_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="InstitutionCreateinvoice">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:InstitutionCreateinvoice" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="InstitutionCreateinvoice">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="InstitutionCreateinvoice_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetOutComenNumber">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:GetOutComenNumber" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetOutComenNumber">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetOutComenNumber_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="FnUserHelpEmaiRequest">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:FnUserHelpEmaiRequest" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="FnUserHelpEmaiRequest">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="FnUserHelpEmaiRequest_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="AddUniversityChancellors">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:AddUniversityChancellors" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="AddUniversityChancellors">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="AddUniversityChancellors_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="InitialGeneralDetails">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:InitialGeneralDetails" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="InitialGeneralDetails">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="InitialGeneralDetails_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="AddProgramRationale">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:AddProgramRationale" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="AddProgramRationale">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="AddProgramRationale_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="ValidateProgramRationale">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:ValidateProgramRationale" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="ValidateProgramRationale">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="ValidateProgramRationale_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="FnGenerateExitReport">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:FnGenerateExitReport" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="FnGenerateExitReport">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="FnGenerateExitReport_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="FnGenerateProgrammeFeedbackVoucher">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:FnGenerateProgrammeFeedbackVoucher" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="FnGenerateProgrammeFeedbackVoucher">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="FnGenerateProgrammeFeedbackVoucher_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="FnGenerateProgrammeEvaluationToool">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:FnGenerateProgrammeEvaluationToool" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="FnGenerateProgrammeEvaluationToool">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="FnGenerateProgrammeEvaluationToool_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="PortalResetPassword">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:PortalResetPassword" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="PortalResetPassword">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="PortalResetPassword_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="FngetRationaleDescription">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:FngetRationaleDescription" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="FngetRationaleDescription">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="FngetRationaleDescription_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="FngetUniversityDomain">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:FngetUniversityDomain" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="FngetUniversityDomain">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="FngetUniversityDomain_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="Fnuseraccountcreation">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:Fnuseraccountcreation" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="Fnuseraccountcreation">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="Fnuseraccountcreation_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="FnceateapplicationLines">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:FnceateapplicationLines" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="FnceateapplicationLines">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="FnceateapplicationLines_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="AccreditationApplication">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:AccreditationApplication" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="AccreditationApplication">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="AccreditationApplication_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CreateCampus">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:CreateCampus" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CreateCampus">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CreateCampus_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CreateOptionResponce">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:CreateOptionResponce" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CreateOptionResponce">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CreateOptionResponce_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CreatAccreditationResponce">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:CreatAccreditationResponce" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CreatAccreditationResponce">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CreatAccreditationResponce_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CreateStaff">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:CreateStaff" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CreateStaff">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CreateStaff_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CreateTrainers">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:CreateTrainers" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CreateTrainers">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CreateTrainers_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SittingCapacity">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:SittingCapacity" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SittingCapacity">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SittingCapacity_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CreateRecomBooks">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:CreateRecomBooks" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CreateRecomBooks">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CreateRecomBooks_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CreateComputerLab">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:CreateComputerLab" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CreateComputerLab">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CreateComputerLab_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CreateCompDetails">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:CreateCompDetails" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CreateCompDetails">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CreateCompDetails_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CreateICTAccessory">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:CreateICTAccessory" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CreateICTAccessory">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CreateICTAccessory_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="DeleteCampusLine">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:DeleteCampusLine" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="DeleteCampusLine">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="DeleteCampusLine_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="DeletestaffLine">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:DeletestaffLine" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="DeletestaffLine">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="DeletestaffLine_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="DeletetrainerLine">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:DeletetrainerLine" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="DeletetrainerLine">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="DeletetrainerLine_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="DeleteclassLine">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:DeleteclassLine" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="DeleteclassLine">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="DeleteclassLine_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="DeleteRefBookLine">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:DeleteRefBookLine" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="DeleteRefBookLine">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="DeleteRefBookLine_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="DeleteCompLine">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:DeleteCompLine" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="DeleteCompLine">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="DeleteCompLine_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="DeleteCompDetailsLine">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:DeleteCompDetailsLine" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="DeleteCompDetailsLine">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="DeleteCompDetailsLine_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SelfEvaluationResponce">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:SelfEvaluationResponce" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SelfEvaluationResponce">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SelfEvaluationResponce_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="PrintCertificate">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:PrintCertificate" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="PrintCertificate">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="PrintCertificate_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SubmitApplication">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:SubmitApplication" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SubmitApplication">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SubmitApplication_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SendEmail">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:SendEmail" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SendEmail">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SendEmail_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="CreatAccreditationSubQResponce">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:CreatAccreditationSubQResponce" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="CreatAccreditationSubQResponce">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="CreatAccreditationSubQResponce_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="DeleteICTLine">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:DeleteICTLine" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="DeleteICTLine">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="DeleteICTLine_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SelfEvalutionApplication">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:SelfEvalutionApplication" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SelfEvalutionApplication">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SelfEvalutionApplication_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="PrintScore">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:PrintScore" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="PrintScore">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="PrintScore_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="PrintdetailedReport">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:PrintdetailedReport" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="PrintdetailedReport">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="PrintdetailedReport_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="ConfirmAccreditationPayment">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:ConfirmAccreditationPayment" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="ConfirmAccreditationPayment">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="ConfirmAccreditationPayment_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="FnCreateApplicantAccountRequest">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:FnCreateApplicantAccountRequest" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="FnCreateApplicantAccountRequest">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="FnCreateApplicantAccountRequest_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="PrintdApplicationReport">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:PrintdApplicationReport" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="PrintdApplicationReport">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="PrintdApplicationReport_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="SendEmailAccountCreation">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:SendEmailAccountCreation" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="SendEmailAccountCreation">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="SendEmailAccountCreation_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="Printdsummeryscore">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:Printdsummeryscore" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="Printdsummeryscore">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="Printdsummeryscore_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="FnResetPassword">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:FnResetPassword" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="FnResetPassword">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="FnResetPassword_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="ResetSendEmail">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:ResetSendEmail" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="ResetSendEmail">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="ResetSendEmail_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="FnChangeStudentPassword">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:FnChangeStudentPassword" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="FnChangeStudentPassword">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="FnChangeStudentPassword_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="AddAccreditationSharepointLinks">
+      <operation soapAction="urn:microsoft-dynamics-schemas/codeunit/CuePortal:AddAccreditationSharepointLinks" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="AddAccreditationSharepointLinks">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="AddAccreditationSharepointLinks_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+  </binding>
+  <service name="CuePortal">
+    <port name="CuePortal_Port" binding="tns:CuePortal_Binding">
+      <address location="http://192.168.0.95:9047/BC140/WS/Data%20Migration/Codeunit/CuePortal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </port>
+  </service>
+</definitions>

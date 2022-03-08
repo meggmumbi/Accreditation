@@ -1,0 +1,37 @@
+﻿
+nav > .nav.nav-tabs{
+
+     border: none;
+    color:#fff;
+    background:#272e38;
+    border-radius:0;
+
+}
+nav > div a.nav-item.nav-link,
+nav > div a.nav-item.nav-link.active
+{
+  border: none;
+    padding: 18px 25px;
+    color:#fff;
+    background:#272e38;
+    border-radius:0;
+}
+
+.nav-tabs .nav-item .nav-link {
+  background-color: #0080FF;
+  color: #FFF;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+  color:black;
+}
+
+.tab-content {
+  border: 1px solid #dee2e6;
+  border-top: transparent;
+}
+
+.tab-content .tab-pane {
+  background-color: #FFF;
+  height: auto;
+}

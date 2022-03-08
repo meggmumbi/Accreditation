@@ -1,0 +1,260 @@
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\roslyn\csc.exe
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\roslyn\System.Collections.Immutable.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\roslyn\System.Reflection.Metadata.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\roslyn\vbc.exe
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\roslyn\VBCSCompiler.exe
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\roslyn\VBCSCompiler.exe.config
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\kasnebAccreditation.dll.config
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\kasnebAccreditation.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\kasnebAccreditation.pdb
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\Microsoft.Data.Edm.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\Microsoft.Data.OData.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\Microsoft.Data.Services.Client.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\System.Spatial.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\Microsoft.Data.Edm.xml
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\Microsoft.Data.OData.xml
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\Microsoft.Data.Services.Client.xml
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\System.Spatial.xml
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\de\Microsoft.Data.Edm.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\es\Microsoft.Data.Edm.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\it\Microsoft.Data.Edm.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\de\Microsoft.Data.OData.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\es\Microsoft.Data.OData.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\fr\Microsoft.Data.OData.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\it\Microsoft.Data.OData.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\ja\Microsoft.Data.OData.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\ko\Microsoft.Data.OData.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\ru\Microsoft.Data.OData.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\de\Microsoft.Data.Services.Client.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\es\Microsoft.Data.Services.Client.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\fr\Microsoft.Data.Services.Client.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\it\Microsoft.Data.Services.Client.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\ja\Microsoft.Data.Services.Client.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\ko\Microsoft.Data.Services.Client.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\ru\Microsoft.Data.Services.Client.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\de\System.Spatial.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\es\System.Spatial.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\fr\System.Spatial.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\it\System.Spatial.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\ja\System.Spatial.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\ko\System.Spatial.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\ru\System.Spatial.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\zh-Hans\System.Spatial.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\bin\zh-Hant\System.Spatial.resources.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\obj\Debug\kasnebAccreditation.csprojResolveAssemblyReference.cache
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\obj\Debug\kasnebAccreditation.dll
+D:\C#projects\kasnebAccreditation\kasnebAccreditation\obj\Debug\kasnebAccreditation.pdb
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\roslyn\csc.exe
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\roslyn\System.Collections.Immutable.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\roslyn\System.Reflection.Metadata.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\roslyn\vbc.exe
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\roslyn\VBCSCompiler.exe
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\roslyn\VBCSCompiler.exe.config
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\kasnebAccreditation.dll.config
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\kasnebAccreditation.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\kasnebAccreditation.pdb
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\Microsoft.Data.Edm.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\Microsoft.Data.OData.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\Microsoft.Data.Services.Client.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\System.Spatial.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\Microsoft.Data.Edm.xml
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\Microsoft.Data.OData.xml
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\Microsoft.Data.Services.Client.xml
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\System.Spatial.xml
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\de\Microsoft.Data.Edm.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\es\Microsoft.Data.Edm.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\it\Microsoft.Data.Edm.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\de\Microsoft.Data.OData.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\es\Microsoft.Data.OData.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\fr\Microsoft.Data.OData.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\it\Microsoft.Data.OData.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\ja\Microsoft.Data.OData.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\ko\Microsoft.Data.OData.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\ru\Microsoft.Data.OData.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\de\Microsoft.Data.Services.Client.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\es\Microsoft.Data.Services.Client.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\fr\Microsoft.Data.Services.Client.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\it\Microsoft.Data.Services.Client.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\ja\Microsoft.Data.Services.Client.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\ko\Microsoft.Data.Services.Client.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\ru\Microsoft.Data.Services.Client.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\de\System.Spatial.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\es\System.Spatial.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\fr\System.Spatial.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\it\System.Spatial.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\ja\System.Spatial.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\ko\System.Spatial.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\ru\System.Spatial.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\zh-Hans\System.Spatial.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\bin\zh-Hant\System.Spatial.resources.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\obj\Debug\kasnebAccreditation.csprojResolveAssemblyReference.cache
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\obj\Debug\kasnebAccreditation.dll
+D:\Dynasoft Business Solutions Ltd\Dynasoft  Clients Portals\KASNEB\kasnebaccreditation\kasnebAccreditation\obj\Debug\kasnebAccreditation.pdb
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\roslyn\csc.exe
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\roslyn\System.Collections.Immutable.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\roslyn\System.Reflection.Metadata.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\roslyn\vbc.exe
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\roslyn\VBCSCompiler.exe
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\roslyn\VBCSCompiler.exe.config
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\kasnebAccreditation.dll.config
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\kasnebAccreditation.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\kasnebAccreditation.pdb
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\Microsoft.Data.Edm.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\Microsoft.Data.OData.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\Microsoft.Data.Services.Client.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\System.Spatial.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\Microsoft.Data.Edm.xml
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\Microsoft.Data.OData.xml
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\Microsoft.Data.Services.Client.xml
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\System.Spatial.xml
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\de\Microsoft.Data.Edm.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\es\Microsoft.Data.Edm.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\it\Microsoft.Data.Edm.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\de\Microsoft.Data.OData.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\es\Microsoft.Data.OData.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\fr\Microsoft.Data.OData.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\it\Microsoft.Data.OData.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\ja\Microsoft.Data.OData.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\ko\Microsoft.Data.OData.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\ru\Microsoft.Data.OData.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\de\Microsoft.Data.Services.Client.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\es\Microsoft.Data.Services.Client.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\fr\Microsoft.Data.Services.Client.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\it\Microsoft.Data.Services.Client.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\ja\Microsoft.Data.Services.Client.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\ko\Microsoft.Data.Services.Client.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\ru\Microsoft.Data.Services.Client.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\de\System.Spatial.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\es\System.Spatial.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\fr\System.Spatial.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\it\System.Spatial.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\ja\System.Spatial.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\ko\System.Spatial.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\ru\System.Spatial.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\zh-Hans\System.Spatial.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\bin\zh-Hant\System.Spatial.resources.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\obj\Debug\kasnebAccreditation.dll
+D:\C#projects\accreditation-v3\kasnebAccreditation\obj\Debug\kasnebAccreditation.pdb
+D:\C#projects\accreditation-v3\kasnebAccreditation\obj\Debug\kasnebAccreditation.csprojResolveAssemblyReference.cache
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\roslyn\csc.exe
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\roslyn\System.Collections.Immutable.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\roslyn\System.Reflection.Metadata.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\roslyn\vbc.exe
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\roslyn\VBCSCompiler.exe
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\roslyn\VBCSCompiler.exe.config
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\kasnebAccreditation.dll.config
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\kasnebAccreditation.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\kasnebAccreditation.pdb
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\Microsoft.Data.Edm.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\Microsoft.Data.OData.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\Microsoft.Data.Services.Client.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\Microsoft.SharePoint.Client.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\Microsoft.SharePoint.Client.Runtime.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\System.Spatial.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\Microsoft.Data.Edm.xml
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\Microsoft.Data.OData.xml
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\Microsoft.Data.Services.Client.xml
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\System.Spatial.xml
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\de\Microsoft.Data.Edm.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\es\Microsoft.Data.Edm.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\it\Microsoft.Data.Edm.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\de\Microsoft.Data.OData.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\es\Microsoft.Data.OData.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\fr\Microsoft.Data.OData.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\it\Microsoft.Data.OData.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\ja\Microsoft.Data.OData.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\ko\Microsoft.Data.OData.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\ru\Microsoft.Data.OData.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\de\Microsoft.Data.Services.Client.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\es\Microsoft.Data.Services.Client.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\fr\Microsoft.Data.Services.Client.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\it\Microsoft.Data.Services.Client.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\ja\Microsoft.Data.Services.Client.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\ko\Microsoft.Data.Services.Client.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\ru\Microsoft.Data.Services.Client.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\de\System.Spatial.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\es\System.Spatial.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\fr\System.Spatial.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\it\System.Spatial.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\ja\System.Spatial.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\ko\System.Spatial.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\ru\System.Spatial.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\zh-Hans\System.Spatial.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\zh-Hant\System.Spatial.resources.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\obj\Debug\kasnebAccreditation.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\obj\Debug\kasnebAccreditation.pdb
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\obj\Debug\kasnebAccreditation.csprojResolveAssemblyReference.cache
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\Newtonsoft.Json.dll
+D:\C#projects\Other Portals\accreditation-v3\kasnebAccreditation\bin\Newtonsoft.Json.xml
